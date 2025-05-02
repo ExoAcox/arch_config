@@ -1,0 +1,7 @@
+{
+    "version": "2.1.1",
+    "autoload": {
+        "USB GAMING MOUSE ": "Side Button",
+        "TPPS/2 IBM TrackPoint": "Touchpad Button"
+    }
+}

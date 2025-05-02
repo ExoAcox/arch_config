@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Increase brightness
+inc_backlight() {
+	xbacklight -inc 3
+}
+
+# Decrease brightness
+dec_backlight() {
+	xbacklight -dec 3
+}
+
+# Toggle brightness
+backlight=$(xbacklight -get)
+toggle_backlight() {
+	if [ $backlight == 0 ]; then
+    	xbacklight -set 6
+    else
+    	xbacklight -set 0
+    fi
+}
+
+# Execute accordingly
+if [[ "$1" == "-inc" ]]; then
+	inc_backlight
+elif [[ "$1" == "-dec" ]]; then
+	dec_backlight
+elif [[ "$1" == "-toggle" ]]; then
+	toggle_backlight
+fi

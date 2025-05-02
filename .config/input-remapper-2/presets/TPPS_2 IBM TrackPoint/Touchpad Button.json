@@ -1,0 +1,38 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 272,
+                "origin_hash": "9deee22d5aa0c49e4289826c2187be63"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + comma",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 273,
+                "origin_hash": "9deee22d5aa0c49e4289826c2187be63"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + period",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 274,
+                "origin_hash": "9deee22d5aa0c49e4289826c2187be63"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L + KEY_SPACE",
+        "mapping_type": "key_macro"
+    }
+]
