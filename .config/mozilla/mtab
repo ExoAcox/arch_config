@@ -1,0 +1,141 @@
+{
+  "options": {
+    "showOptionsButton": true
+  },
+  "user": {
+    "name": "Acox"
+  },
+  "title": {
+    "defaultTitle": "mtab",
+    "dynamic": {
+      "enabled": true
+    },
+    "faviconType": "default"
+  },
+  "message": {
+    "enabled": true,
+    "font": {
+      "type": "default",
+      "custom": ""
+    },
+    "textColor": "#ffffff",
+    "textSize": 3.75,
+    "type": "afternoon-morning",
+    "customText": "your custom text",
+    "weather": {
+      "unitsType": "f"
+    }
+  },
+  "wallpaper": {
+    "type": "fileUpload",
+    "enabled": true,
+    "url": "./wallpapers/default.png",
+    "filters": {
+      "brightness": "0.66",
+      "blur": "0px"
+    }
+  },
+  "ui": {
+    "style": "glass",
+    "glassColor": "#ffffff20",
+    "blurStrength": "32px",
+    "foregroundColor": "#262626",
+    "backgroundColor": "#171717",
+    "highlightColor": "#ffffff20",
+    "cornerStyle": "round",
+    "customCSS": "/* input custom css... */\n\n#search-container {\n   border: transparent;\n}\n\n#bookmarks-container {\n   padding-top: 1rem;\n}"
+  },
+  "animations": {
+    "enabled": true,
+    "bookmarkTiming": "left",
+    "initialType": "animate-up-bouncy",
+    "searchType": "animate-page-shrink",
+    "bookmarkType": "animate-page-up"
+  },
+  "search": {
+    "enabled": true,
+    "font": {
+      "type": "default",
+      "custom": ""
+    },
+    "textColor": "#ffffff",
+    "placeholderText": "the whole universe in on your keyboard 🤌🏻",
+    "bookmarkPlaceholderText": "find bookmark...",
+    "placeholderTextColor": "#ffffff",
+    "searchIconColor": "#14b8a6",
+    "bookmarkIconColor": "#3b82f6",
+    "selectIconColor": "#f59e0b",
+    "engine": "google",
+    "useCustomEngine": false,
+    "customEngineURL": "",
+    "focusedBorderColor": "#0ea5e9",
+    "assist": {
+      "date": true,
+      "math": true,
+      "definitions": true,
+      "conversions": true
+    }
+  },
+  "hotkeys": {
+    "enabled": true,
+    "activationKey": " ",
+    "closePageKey": "x",
+    "searchBookmarksKey": "b"
+  },
+  "bookmarks": {
+    "type": "user-defined",
+    "showBookmarkNames": false,
+    "numberKeys": false,
+    "lineOrientation": "top",
+    "defaultFolderIconType": "ri-folder-fill",
+    "userDefinedCols": 4,
+    "userDefined": [
+      {
+        "type": "bookmark",
+        "name": "whatsapp",
+        "url": "https://web.whatsapp.com/",
+        "color": "#25D366",
+        "iconType": "ri-whatsapp-fill",
+        "iconColor": "#ffffff",
+        "fill": ""
+      },
+      {
+        "type": "bookmark",
+        "name": "facebook",
+        "url": "https://web.facebook.com/",
+        "color": "#0866FF",
+        "iconType": "ri-facebook-fill",
+        "iconColor": "#ffffff",
+        "fill": ""
+      },
+      {
+        "type": "bookmark",
+        "name": "youtube",
+        "url": "https://youtube.com",
+        "color": "#f43f5e",
+        "iconType": "ri-youtube-fill",
+        "iconColor": "#ffffff",
+        "fill": ""
+      },
+      {
+        "type": "bookmark",
+        "name": "chatgpt",
+        "url": "https://chatgpt.com",
+        "color": "#14b8a6",
+        "iconType": "ri-openai-fill",
+        "iconColor": "#ffffff",
+        "fill": ""
+      }
+    ],
+    "defaultBlockyCols": 4,
+    "defaultBlockyColorType": "custom",
+    "defaultBlockyColor": "#ffffff",
+    "bookmarksLocationFirefox": "toolbar",
+    "defaultFaviconSource": "duckduckgo"
+  },
+  "extras": {
+    "snow": {
+      "enabled": "off"
+    }
+  }
+}
