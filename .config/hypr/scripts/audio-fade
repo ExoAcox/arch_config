@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Settings
+STEP=5         # Volume step (percent)
+SLEEP=0.05     # Time to wait between volume changes
+PLAYER="playerctl"  # Adjust to your media players
+
+# Get current player status
+status=$($PLAYER status 2>/dev/null)
+
+# Get current volume
+current_volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+(?=%)' | head -1)
+
+fade_out() {
+    for ((v=current_volume; v>=0; v-=$STEP)); do
+        pactl set-sink-volume @DEFAULT_SINK@ ${v}%
+        sleep $SLEEP
+    done
+}
+
+fade_in() {
+    for ((v=0; v<=current_volume; v+=$STEP)); do
+        pactl set-sink-volume @DEFAULT_SINK@ ${v}%
+        sleep $SLEEP
+    done
+}
+
+if [[ $status == "Playing" ]]; then
+    fade_out
+    $PLAYER pause
+else
+    $PLAYER play
+    fade_in
+fi
+

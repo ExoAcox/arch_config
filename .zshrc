@@ -233,6 +233,11 @@ fi
 
 ### ALIASES ###
 
+alias cl='clear'
+alias x='exit'
+alias edit='mousepad'
+alias hypr='vim ~/.config/hypr/hyprland.conf'
+alias cdc='cd ~/.config'
 alias ls='lsd'
 alias n='neofetch'
 alias f='figlet -f slant I use Arch btw'
