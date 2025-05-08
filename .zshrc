@@ -233,8 +233,11 @@ fi
 
 ### ALIASES ###
 
+alias sudo='sudo-rs'
+alias su='su-rs'
 alias cl='clear'
 alias x='exit'
+alias v='vim'
 alias edit='mousepad'
 alias hypr='vim ~/.config/hypr/hyprland.conf'
 alias cdc='cd ~/.config'

@@ -1,0 +1,31 @@
+{
+  "custom/music": {
+    "icon": "󰎇",
+    "label": "{}",
+    "tooltip": "{}",
+    "truncationSize": 30,
+    "interval": 1000,
+    "hideOnEmpty": true,
+    "execute": "~/.config/hyprpanel/scripts/music",
+    "executeOnAction": "",
+    "scrollThreshold": 1,
+    "actions": {
+      "onLeftClick": "playerctl play-pause",
+      "onRightClick": "playerctl next"
+    }
+  },
+  "custom/sleep": {
+    "icon": {
+	"active": "󰾪",
+	"not_active": "󰅶"
+      },
+    "label": "",
+    "tooltip": "Idle Indicator",
+    "truncationSize": 0,
+    "interval": 1000,
+    "execute": "~/.config/hyprpanel/scripts/sleep",
+    "executeOnAction": "",
+    "scrollThreshold": 1,
+    "actions": {}
+  }
+}

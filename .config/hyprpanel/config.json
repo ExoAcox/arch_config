@@ -1,31 +1,48 @@
 {
-  "bar.customModules.updates.pollingInterval": 1440000,
-  "theme.bar.floating": true,
-  "theme.bar.buttons.enableBorders": true,
-  "theme.bar.buttons.workspaces.enableBorder": false,
-  "theme.bar.scaling": 78,
-  "bar.media.truncation_size": 24,
-  "bar.bluetooth.label": true,
-  "theme.bar.buttons.workspaces.fontSize": "1.2em",
-  "bar.workspaces.show_numbered": false,
-  "theme.font.name": "JetBrainsMonoNL Nerd Font Mono",
-  "terminal": "kitty",
-  "theme.font.weight": 500,
-  "theme.bar.border_radius": "0.4em",
-  "theme.bar.buttons.radius": "0em",
-  "bar.workspaces.workspaces": 4,
-  "theme.bar.buttons.padding_x": "0.7rem",
-  "theme.bar.margin_sides": "0.1em",
-  "theme.bar.buttons.borderSize": "0em",
-  "theme.bar.menus.border.color": "#24273a",
-  "theme.bar.menus.monochrome": false,
-  "scalingPriority": "both",
+  "bar.windowtitle.title_map": [
+    [
+      "kitty",
+      "",
+      "Terminal"
+    ],
+    [
+      "dev.zed.zed",
+      "",
+      "Code Editor"
+    ],
+    [
+      "Com.ktechpit.whatsie",
+      "󰖣",
+      "WhatsApp"
+    ]
+  ],
+  "bar.workspaces.applicationIconMap": {
+    "class:dev.zed.Zed": ""
+  },
+  "bar.systray.customIcons": {
+    "chrome_status_icon_1": {
+      "icon": "",
+      "color": "#e0def4"
+    },
+    "spotify-client": {
+      "icon": "󰓇",
+      "color": "#e0def4"
+    },
+    "WhatSie": {
+      "icon": "󰖣",
+      "color": "#57E389"
+    },
+    "proton-vpn-app": {
+      "icon": "",
+      "color": "#e0def4"
+    }
+  },
   "bar.layouts": {
     "0": {
       "left": [
         "dashboard",
         "workspaces",
-        "media",
+        "custom/music",
         "windowtitle",
         "netstat"
       ],
@@ -40,6 +57,7 @@
         "network",
         "bluetooth",
         "battery",
+	"custom/sleep",
         "systray",
         "notifications",
         "power"
@@ -49,7 +67,7 @@
       "left": [
         "dashboard",
         "workspaces",
-        "media",
+        "custom/music",
         "windowtitle",
         "netstat"
       ],
@@ -64,6 +82,7 @@
         "network",
         "bluetooth",
         "battery",
+	"custom/sleep",
         "systray",
         "notifications",
         "power"
@@ -85,6 +104,27 @@
       ]
     }
   },
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.bar.floating": true,
+  "theme.bar.buttons.enableBorders": true,
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "theme.bar.scaling": 78,
+  "bar.media.truncation_size": 24,
+  "bar.bluetooth.label": true,
+  "theme.bar.buttons.workspaces.fontSize": "1.2em",
+  "bar.workspaces.show_numbered": false,
+  "theme.font.name": "JetBrainsMonoNL Nerd Font Mono",
+  "terminal": "kitty",
+  "theme.font.weight": 500,
+  "theme.bar.border_radius": "0.4em",
+  "theme.bar.buttons.radius": "0em",
+  "bar.workspaces.workspaces": 4,
+  "theme.bar.buttons.padding_x": "0.7rem",
+  "theme.bar.margin_sides": "0.1em",
+  "theme.bar.buttons.borderSize": "0em",
+  "theme.bar.menus.border.color": "#24273a",
+  "theme.bar.menus.monochrome": false,
+  "scalingPriority": "both",
   "theme.bar.outer_spacing": "7",
   "menus.clock.time.military": true,
   "menus.clock.time.hideSeconds": true,
@@ -490,42 +530,9 @@
   "menus.dashboard.shortcuts.left.shortcut1.icon": "",
   "menus.dashboard.shortcuts.left.shortcut2.icon": "",
   "menus.dashboard.shortcuts.right.shortcut3.icon": "󰹑",
-  "bar.windowtitle.title_map": [
-    [
-      "kitty",
-      "",
-      "Terminal"
-    ],
-    [
-      "dev.zed.zed",
-      "",
-      "Code Editor"
-    ]
-  ],
-  "bar.workspaces.applicationIconMap": {
-    "class:dev.zed.Zed": ""
-  },
-  "bar.systray.customIcons": {
-    "chrome_status_icon_1": {
-      "icon": "",
-      "color": "#e0def4"
-    },
-    "spotify-client": {
-      "icon": "󰓇",
-      "color": "#e0def4"
-    },
-    "TelegramDesktop": {
-      "icon": "",
-      "color": "#e0def4"
-    },
-    "proton-vpn-app": {
-      "icon": "",
-      "color": "#e0def4"
-    }
-  },
   "menus.clock.weather.unit": "metric",
   "menus.clock.weather.key": "6b3b8890ab3b46b08c2135444240311",
-  "menus.clock.weather.location": "Kolkata",
+  "menus.clock.weather.location": "Jakarta",
   "menus.transition": "crossfade",
   "theme.tooltip.scaling": 70,
   "bar.customModules.netstat.rateUnit": "KiB",

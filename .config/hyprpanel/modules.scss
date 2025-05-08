@@ -1,0 +1,25 @@
+@include styleModule(
+    "cmodule-music",
+    (
+            "text-color": #57E389,
+            "icon-color": #57E389,
+            "icon-background": #191624,
+            "label-background": #191624,
+            "inner-spacing": 0.5em,
+            "border-enabled": false,
+            "icon-size": 1em
+        )
+);
+
+@include styleModule(
+    "cmodule-sleep",
+    (
+            "text-color": #C4A7E7,
+            "icon-color": #C4A7E7,
+            "icon-background": #191624,
+            "label-background": #191624,
+            "inner-spacing": 0em,
+            "border-enabled": false,
+            "icon-size": 1.2em
+        )
+);
