@@ -2,7 +2,7 @@
 
 result=$(timeout 0.1s sway-audio-idle-inhibit --dry-print-both)
 
-if [ "$title" = "RUNNING" ]; then
+if [ "$result" = "RUNNING" ]; then
     echo "{\"alt\":\"active\"}"
 else
    echo "{\"alt\":\"not_active\"}"

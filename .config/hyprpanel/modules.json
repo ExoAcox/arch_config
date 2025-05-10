@@ -16,8 +16,9 @@
   },
   "custom/sleep": {
     "icon": {
-	"active": "󰾪",
-	"not_active": "󰅶"
+	"active": "󰅶",
+	"not_active": "󰾪",
+	"default": "󰾪"
       },
     "label": "",
     "tooltip": "Idle Indicator",

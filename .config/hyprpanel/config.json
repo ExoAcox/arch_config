@@ -11,7 +11,7 @@
       "Code Editor"
     ],
     [
-      "Com.ktechpit.whatsie",
+      "com.ktechpit.whatsie",
       "󰖣",
       "WhatsApp"
     ]
@@ -57,7 +57,7 @@
         "network",
         "bluetooth",
         "battery",
-	"custom/sleep",
+        "custom/sleep",
         "systray",
         "notifications",
         "power"
@@ -82,7 +82,7 @@
         "network",
         "bluetooth",
         "battery",
-	"custom/sleep",
+        "custom/sleep",
         "systray",
         "notifications",
         "power"
@@ -539,7 +539,7 @@
   "bar.customModules.netstat.dynamicIcon": false,
   "bar.customModules.netstat.label": true,
   "bar.customModules.netstat.labelType": "in",
-  "bar.customModules.netstat.icon": "󰖟",
+  "bar.customModules.netstat.icon": "",
   "bar.customModules.netstat.text": "#ffffff",
   "menus.volume.raiseMaximumVolume": false,
   "bar.workspaces.showWsIcons": true,
@@ -608,5 +608,6 @@
   "notifications.monitor": 1,
   "notifications.autoDismiss": true,
   "menus.media.hideAuthor": false,
-  "theme.matugen_settings.variation": "standard_1"
+  "theme.matugen_settings.variation": "standard_1",
+  "theme.bar.buttons.modules.netstat.spacing": "0em"
 }

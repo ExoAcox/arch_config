@@ -1,145 +1,14 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
-###
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-#installation via script from github
-#export ZSH="/home/$USER/.oh-my-zsh"
-#installation via paru -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-# ZSH_THEME="random"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-if [ -f $ZSH/oh-my-zsh.sh ]; then
-  source $ZSH/oh-my-zsh.sh
-fi
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Dracula Theme (for zsh-syntax-highlighting)
-#
-# https://github.com/zenorocha/dracula-theme
-#
-# Copyright 2021, All rights reserved
-#
-# Code licensed under the MIT license
-# http://zenorocha.mit-license.org
-#
-# @author George Pickering <@bigpick>
-# @author Zeno Rocha <hi@zenorocha.com>
-# Paste this files contents inside your ~/.zshrc before you activate zsh-syntax-highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
-# Default groupings per, https://spec.draculatheme.com, try to logically separate
-# possible ZSH_HIGHLIGHT_STYLES settings accordingly...?
-#
-# Italics not yet supported by zsh; potentially soon:
-#    https://github.com/zsh-users/zsh-syntax-highlighting/issues/432
-#    https://www.zsh.org/mla/workers/2021/msg00678.html
-# ... in hopes that they will, labelling accordingly with ,italic where appropriate
-#
-# Main highlighter styling: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
-#
-## General
-### Diffs
-### Markup
-## Classes
-## Comments
+
 ZSH_HIGHLIGHT_STYLES[comment]='fg=#6272A4'
-## Constants
-## Entitites
-## Functions/methods
 ZSH_HIGHLIGHT_STYLES[alias]='fg=#50FA7B'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#50FA7B'
 ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#50FA7B'
@@ -150,12 +19,9 @@ ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#FFB86C,italic'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#FFB86C'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#FFB86C'
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=#BD93F9'
-## Keywords
-## Built ins
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=#8BE9FD'
 ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#8BE9FD'
 ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#8BE9FD'
-## Punctuation
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#FF79C6'
 ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-unquoted]='fg=#F8F8F2'
@@ -163,9 +29,6 @@ ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#FF79C6'
 ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#FF79C6'
 ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=#FF79C6'
-## Serializable / Configuration Languages
-## Storage
-## Strings
 ZSH_HIGHLIGHT_STYLES[command-substitution-quoted]='fg=#F1FA8C'
 ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=#F1FA8C'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#F1FA8C'
@@ -173,14 +36,12 @@ ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#FF5555'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#F1FA8C'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#FF5555'
 ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#F1FA8C'
-## Variables
 ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#FF5555'
 ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[assign]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#F8F8F2'
-## No category relevant in spec
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#FF5555'
 ZSH_HIGHLIGHT_STYLES[path]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#FF79C6'
@@ -188,10 +49,6 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#FF79C6'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#BD93F9'
-#ZSH_HIGHLIGHT_STYLES[command-substitution]='fg=?'
-#ZSH_HIGHLIGHT_STYLES[command-substitution-unquoted]='fg=?'
-#ZSH_HIGHLIGHT_STYLES[process-substitution]='fg=?'
-#ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=?'
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#FF5555'
 ZSH_HIGHLIGHT_STYLES[redirection]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F8F8F2'
@@ -199,29 +56,27 @@ ZSH_HIGHLIGHT_STYLES[default]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[cursor]='standout'
 
 
-####   ARCOLINUX SETTINGS   ####
-export PAGER='most'
+plugins=(git cd-ls zsh-autosuggestions zsh-syntax-highlighting)
 
-if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+  source $ZSH/oh-my-zsh.sh
 fi
 
-setopt GLOB_DOTS
-#share commands between terminal instances or not
-unsetopt SHARE_HISTORY
-#setopt SHARE_HISTORY
+fpath=(/usr/share/zsh/site-functions $fpath)
+autoload -Uz compinit
+compinit
 
-# If not running interactively, don't do anything
+export PAGER='most'
+
+setopt GLOB_DOTS
+unsetopt SHARE_HISTORY
+
 [[ $- != *i* ]] && return
 
 export HISTCONTROL=ignoreboth:erasedups
 
-# Make nano the default editor
-
 export EDITOR='vim'
 export VISUAL='vim'
-
-#PS1='[\u@\h \W]\$ '
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
@@ -231,13 +86,12 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-### ALIASES ###
-
-alias sudo='sudo-rs'
-alias su='su-rs'
+#alias sudo='sudo-rs'
+#alias su='su-rs'
 alias cl='clear'
 alias x='exit'
 alias v='vim'
+alias sc='scrcpy -Sw --power-off-on-close --no-power-on'
 alias edit='mousepad'
 alias hypr='vim ~/.config/hypr/hyprland.conf'
 alias cdc='cd ~/.config'
@@ -248,15 +102,12 @@ alias logout='pkill -u yuju'
 alias sleep='systemctl suspend'
 alias code='code --ozone-platform=wayland'
 
-
-#list
 alias la='ls -a'
 alias ll='ls -alFh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 alias listdir="ls -d */ > list"
 
-#pacman
 alias sps='sudo pacman -S'
 alias spr='sudo pacman -R'
 alias sprs='sudo pacman -Rs'
@@ -264,7 +115,6 @@ alias sprdd='sudo pacman -Rdd'
 alias spqo='sudo pacman -Qo'
 alias spsii='sudo pacman -Sii'
 
-# show the list of packages that need this package - depends mpv as example
 function_depends()  {
     search=$(echo "$1")
     sudo pacman -Sii $search | grep "Required" | sed -e "s/Required By     : //g" | sed -e "s/  /\n/g"
@@ -272,7 +122,6 @@ function_depends()  {
 
 alias depends='function_depends'
 
-#fix obvious typo's
 alias cd..='cd ..'
 alias pdw='pwd'
 alias udpate='sudo pacman -Syyu'
@@ -282,169 +131,97 @@ alias updqte='sudo pacman -Syyu'
 alias upqll='paru -Syu --noconfirm'
 alias upal='paru -Syu --noconfirm'
 
-## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-#readable output
 alias df='df -h'
 
-#keyboard
 alias give-me-azerty-be="sudo localectl set-x11-keymap be"
 alias give-me-qwerty-us="sudo localectl set-x11-keymap us"
 
-#setlocale
 alias setlocale="sudo localectl set-locale LANG=en_US.UTF-8"
 alias setlocales="sudo localectl set-x11-keymap be && sudo localectl set-locale LANG=en_US.UTF-8"
 
-#pacman unlock
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
 
-#arcolinux logout unlock
 alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
 
-#which graphical card is working
 alias whichvga="/usr/local/bin/arcolinux-which-vga"
 
-#free
 alias free="free -mt"
 
-#continue download
 alias wget="wget -c"
 
-#userlist
 alias userlist="cut -d: -f1 /etc/passwd | sort"
 
-#merge new settings
 alias merge="xrdb -merge ~/.Xresources"
 
-# Aliases for software managment
-# pacman
 alias pacman="sudo pacman --color auto"
 alias update="sudo pacman -Syyu"
 alias upd="sudo pacman -Syyu"
 
-# paru as aur helper - updates everything
 alias pksyua="paru -Syu --noconfirm"
 alias upall="paru -Syu --noconfirm"
 alias upa="paru -Syu --noconfirm"
 
-#ps
 alias psa="ps auxf"
 alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
-#grub update
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-#grub issue 08/2022
-alias install-grub-efi="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArcoLinux"
-
-#add new fonts
 alias update-fc='sudo fc-cache -fv'
 
-#copy/paste all content of /etc/skel over to home folder - backup of config created - beware
-#skel alias has been replaced with a script at /usr/local/bin/skel
-
-#backup contents of /etc/skel to hidden backup folder in home/user
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
-#copy shell configs
 alias cb='cp /etc/skel/.bashrc ~/.bashrc && echo "Copied."'
 alias cz='cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
 alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
 
-#switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
-#switch between displaymanager or bootsystem
-alias toboot="sudo /usr/local/bin/arcolinux-toboot"
-alias togrub="sudo /usr/local/bin/arcolinux-togrub"
-alias torefind="sudo /usr/local/bin/arcolinux-torefind"
-alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
-alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
-alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
-alias togdm="sudo pacman -S gdm --noconfirm --needed ; sudo systemctl enable gdm.service -f ; echo 'Gdm is active - reboot now'"
-alias tolxdm="sudo pacman -S lxdm --noconfirm --needed ; sudo systemctl enable lxdm.service -f ; echo 'Lxdm is active - reboot now'"
-alias toemptty="sudo pacman -S emptty --noconfirm --needed ; sudo systemctl enable emptty.service -f ; echo 'Emptty is active - reboot now'"
-
-# kill commands
-# quickly kill conkies
-alias kc='killall conky'
-# quickly kill polybar
-alias kp='killall polybar'
-# quickly kill picom
-alias kpi='killall picom'
-
-# hardware info --short
-alias hw="hwinfo --short"
-
-# fastfetch --short
 alias ff="fastfetch"
 
-# audio check pulseaudio or pipewire
 alias audio="pactl info | grep 'Server Name'"
 
-# skip integrity check
 alias paruskip='paru -S --mflags --skipinteg'
 alias yayskip='yay -S --mflags --skipinteg'
 alias trizenskip='trizen -S --skipinteg'
 
-# check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
-#approximation of how old your hardware is
 alias howold="sudo lshw | grep -B 3 -A 8 BIOS"
 
-#check cpu
 alias cpu="cpuid -i | grep uarch | head -n 1"
 
-#get fastest mirrors in your neighborhood
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
-#our experimental - best option for the moment
 alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 alias ram='rate-mirrors --allow-root --disable-comments arch | sudo tee /etc/pacman.d/mirrorlist'
 alias rams='rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
 
-#mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
 
-#enabling vmware services
 alias start-vmware="sudo systemctl enable --now vmtoolsd.service"
 alias vmware-start="sudo systemctl enable --now vmtoolsd.service"
 alias sv="sudo systemctl enable --now vmtoolsd.service"
 
-#shopt
-#shopt -s autocd # change to named directory
-#shopt -s cdspell # autocorrects cd misspellings
-#shopt -s cmdhist # save multi-line commands in history as single line
-#shopt -s dotglob
-#shopt -s histappend # do not overwrite history
-#shopt -s expand_aliases # expand aliases
-
-#youtube download
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
 alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias yta-flac="yt-dlp --extract-audio --audio-format flac "
 alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
-#Recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
-#iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 alias isoo="cat /etc/dev-rel"
 
-#Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 # This will generate a list of explicitly installed packages
@@ -653,24 +430,6 @@ alias personal='cp -Rf /personal/* ~'
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
-# reporting tools - install when not installed
-#fastfetchx
-# neofetch --kitty
-#screenfetch
-#alsi
-#paleofetch
-#fetch
-#hfetch
-#sfetch
-#ufetch
-#ufetch-arco
-#pfetch
-#sysinfo
-#sysinfo-retro
-#cpufetch
-#colorscript random
-#hyfetchsource /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
