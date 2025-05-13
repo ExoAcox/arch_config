@@ -97,6 +97,7 @@ alias hypr='vim ~/.config/hypr/hyprland.conf'
 alias cdc='cd ~/.config'
 alias ls='lsd'
 alias n='neofetch'
+alias mega='mega-cmd'
 alias f='figlet -f slant I use Arch btw'
 alias logout='pkill -u yuju'
 alias sleep='systemctl suspend'
@@ -433,3 +434,4 @@ alias personal='cp -Rf /personal/* ~'
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+

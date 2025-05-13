@@ -17,7 +17,9 @@
     ]
   ],
   "bar.workspaces.applicationIconMap": {
-    "class:dev.zed.Zed": ""
+    "class:dev.zed.Zed": "",
+    "class:com.ktechpit.whatsie": "󰖣",
+    "title:nvim": ""
   },
   "bar.systray.customIcons": {
     "chrome_status_icon_1": {
@@ -609,5 +611,6 @@
   "notifications.autoDismiss": true,
   "menus.media.hideAuthor": false,
   "theme.matugen_settings.variation": "standard_1",
-  "theme.bar.buttons.modules.netstat.spacing": "0em"
+  "theme.bar.buttons.modules.netstat.spacing": "0em",
+  "bar.customModules.storage.labelType": "used"
 }
