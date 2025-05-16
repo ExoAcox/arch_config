@@ -14,5 +14,6 @@
 !/gtk-2.0
 !/mozilla
 !/nvim
+!/waybar
 
 !/.gitignore

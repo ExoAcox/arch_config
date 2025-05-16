@@ -19,6 +19,8 @@
   "bar.workspaces.applicationIconMap": {
     "class:dev.zed.Zed": "",
     "class:com.ktechpit.whatsie": "󰖣",
+    "class:mousepad": "󱞁",
+    "class:nvim": "",
     "title:nvim": ""
   },
   "bar.systray.customIcons": {
@@ -61,7 +63,6 @@
         "battery",
         "custom/sleep",
         "systray",
-        "notifications",
         "power"
       ]
     },
@@ -86,7 +87,6 @@
         "battery",
         "custom/sleep",
         "systray",
-        "notifications",
         "power"
       ]
     },
@@ -106,6 +106,7 @@
       ]
     }
   },
+  "dbus.notifications.enabled": false,
   "bar.customModules.updates.pollingInterval": 1440000,
   "theme.bar.floating": true,
   "theme.bar.buttons.enableBorders": true,
@@ -612,5 +613,6 @@
   "menus.media.hideAuthor": false,
   "theme.matugen_settings.variation": "standard_1",
   "theme.bar.buttons.modules.netstat.spacing": "0em",
-  "bar.customModules.storage.labelType": "used"
+  "bar.customModules.storage.labelType": "percentage",
+  "bar.customModules.storage.label": true
 }
