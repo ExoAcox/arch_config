@@ -74,7 +74,7 @@ unsetopt SHARE_HISTORY
 [[ $- != *i* ]] && return
 
 export HISTCONTROL=ignoreboth:erasedups
-
+export GEMINI_API_KEY=AIzaSyA1bgfG7DMrG51njgz4EKnKE2q9G3Es3Ao
 export EDITOR='vim'
 export VISUAL='vim'
 
@@ -435,3 +435,11 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# pnpm
+export PNPM_HOME="/home/yuju/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

@@ -14,6 +14,21 @@
       "com.ktechpit.whatsie",
       "󰖣",
       "WhatsApp"
+    ],
+    [
+      "postman",
+      "",
+      "Postman"
+    ],
+    [
+      "darktable",
+      "󰄄",
+      "Darktable"
+    ],
+    [
+      "localsend",
+      "󰒊",
+      "Localsend"
     ]
   ],
   "bar.workspaces.applicationIconMap": {
@@ -21,7 +36,10 @@
     "class:com.ktechpit.whatsie": "󰖣",
     "class:mousepad": "󱞁",
     "class:nvim": "",
-    "title:nvim": ""
+    "title:nvim": "",
+    "class:localsend": "󰒊",
+    "class:Darktable": "󰄄",
+    "class:Postman": ""
   },
   "bar.systray.customIcons": {
     "chrome_status_icon_1": {
@@ -62,6 +80,7 @@
         "bluetooth",
         "battery",
         "custom/sleep",
+        "updates",
         "systray",
         "power"
       ]
@@ -86,6 +105,7 @@
         "bluetooth",
         "battery",
         "custom/sleep",
+        "updates",
         "systray",
         "power"
       ]
@@ -107,7 +127,7 @@
     }
   },
   "dbus.notifications.enabled": false,
-  "bar.customModules.updates.pollingInterval": 1440000,
+  "bar.customModules.updates.pollingInterval": 86400000,
   "theme.bar.floating": true,
   "theme.bar.buttons.enableBorders": true,
   "theme.bar.buttons.workspaces.enableBorder": false,
@@ -441,7 +461,7 @@
   "theme.bar.menus.menu.power.buttons.sleep.background": "#21202e",
   "theme.bar.buttons.modules.ram.text": "#f6c177",
   "theme.bar.menus.menu.power.buttons.logout.text": "#9ccfd8",
-  "theme.bar.buttons.modules.updates.icon_background": "#30738f",
+  "theme.bar.buttons.modules.updates.icon_background": "#9cced8",
   "theme.bar.buttons.modules.kbLayout.background": "#21202e",
   "theme.bar.buttons.modules.power.background": "#191624",
   "theme.bar.buttons.modules.weather.background": "#21202e",
@@ -452,11 +472,11 @@
   "theme.bar.buttons.windowtitle.icon_background": "#c4a7e7",
   "theme.bar.buttons.modules.cpu.icon_background": "#eb6f92",
   "theme.bar.menus.menu.power.buttons.logout.icon_background": "#9ccfd8",
-  "theme.bar.buttons.modules.updates.text": "#30738f",
+  "theme.bar.buttons.modules.updates.text": "#9cced8",
   "theme.bar.menus.menu.power.buttons.sleep.icon": "#1f1d2e",
   "theme.bar.buttons.bluetooth.icon_background": "#89dbeb",
   "theme.bar.menus.menu.power.buttons.restart.background": "#21202e",
-  "theme.bar.buttons.modules.updates.icon": "#30738f",
+  "theme.bar.buttons.modules.updates.icon": "#9cced8",
   "theme.bar.buttons.modules.cpu.text": "#eb6f92",
   "theme.bar.buttons.modules.netstat.icon_background": "#9cced8",
   "theme.bar.buttons.modules.kbLayout.text": "#9ccfd8",
@@ -525,9 +545,9 @@
   "menus.dashboard.shortcuts.right.shortcut3.command": "bash -c \"sleep 0.5 && grim $HOME/Pictures/Screenshots/$(date +'%s_grim.png') && notify-send 'Captured Screen'\"",
   "bar.clock.icon": "󰥔",
   "theme.bar.menus.border.size": "0.22em",
-  "bar.customModules.updates.updateCommand": "$HOME/.config/ags/scripts/checkUpdates.sh -arch",
+  "bar.customModules.updates.updateCommand": "/usr/share/hyprpanel/scripts/checkUpdates.sh -arch",
   "bar.customModules.updates.icon": "",
-  "bar.customModules.updates.leftClick": "kitty -e arch-update",
+  "bar.customModules.updates.leftClick": "kitty",
   "bar.media.rightClick": "playerctl -p spotify play-pause",
   "menus.dashboard.shortcuts.left.shortcut3.icon": "",
   "menus.dashboard.shortcuts.left.shortcut1.icon": "",
@@ -614,5 +634,6 @@
   "theme.matugen_settings.variation": "standard_1",
   "theme.bar.buttons.modules.netstat.spacing": "0em",
   "bar.customModules.storage.labelType": "percentage",
-  "bar.customModules.storage.label": true
+  "bar.customModules.storage.label": true,
+  "bar.customModules.updates.extendedTooltip": true
 }
