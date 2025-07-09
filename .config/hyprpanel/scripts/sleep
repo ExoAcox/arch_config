@@ -1,6 +1,6 @@
 #!/bin/bash
 
-result=$(timeout 0.1s sway-audio-idle-inhibit --dry-print-both)
+result=$(timeout 0.1s sway-audio-idle-inhibit --dry-print-both --ignore-app wayvibes)
 
 if [ "$result" = "RUNNING" ]; then
     echo "{\"alt\":\"active\"}"
