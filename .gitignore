@@ -1,7 +1,10 @@
-/*
+# Ignore everything
+*
 
+# Allow only specific folder
 !/.config/
 
+# Allow specific files in root
 !/.gitignore
 !/.zshrc
 !/.p10k.zsh

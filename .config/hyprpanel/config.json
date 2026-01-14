@@ -11,6 +11,11 @@
       "Code Editor"
     ],
     [
+      "antigravity",
+      "",
+      "Antigravity"
+    ],
+    [
       "com.ktechpit.whatsie",
       "󰖣",
       "WhatsApp"
@@ -29,17 +34,30 @@
       "localsend",
       "󰒊",
       "Localsend"
+    ],
+    [
+      "dbeaver",
+      "",
+      "DBeaver"
+    ],
+    [
+      "tor browser",
+      "",
+      "Tor Browser"
     ]
   ],
   "bar.workspaces.applicationIconMap": {
     "class:dev.zed.Zed": "",
+    "class:Antigravity": "",
     "class:com.ktechpit.whatsie": "󰖣",
     "class:mousepad": "󱞁",
     "class:nvim": "",
     "title:nvim": "",
     "class:localsend": "󰒊",
     "class:Darktable": "󰄄",
-    "class:Postman": ""
+    "class:Postman": "",
+    "class:DBeaver": "",
+    "class:Tor Browser": ""
   },
   "bar.systray.customIcons": {
     "chrome_status_icon_1": {
@@ -635,5 +653,11 @@
   "theme.bar.buttons.modules.netstat.spacing": "0em",
   "bar.customModules.storage.labelType": "percentage",
   "bar.customModules.storage.label": true,
-  "bar.customModules.updates.extendedTooltip": true
+  "bar.customModules.updates.extendedTooltip": true,
+  "bar.customModules.ram.labelType": "percentage",
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "bar.customModules.ram.label": true,
+  "theme.bar.buttons.modules.ram.enableBorder": false
 }

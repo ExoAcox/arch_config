@@ -1,9 +1,16 @@
 #!/bin/bash
 
-title=$(playerctl metadata --format '{{title}}' 2>/dev/null)
+artist=$(playerctl metadata artist 2>/dev/null)
+title=$(playerctl metadata title 2>/dev/null)
+album=$(playerctl metadata album 2>/dev/null)
+url=$(playerctl metadata xesam:url 2>/dev/null)
 
-if [ -z "$title" ]; then
-    echo ""
-else
+if [[ "$url" == *"music.youtube.com"* ]]; then
+  echo "$artist - $title"
+elif [ -n "$album" ]; then
+    echo "$artist - $title"
+elif [ -n "$title" ]; then
     echo "$title"
+else
+    echo ""
 fi

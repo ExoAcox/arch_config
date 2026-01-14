@@ -4,6 +4,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH=/usr/share/oh-my-zsh/
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
@@ -102,6 +104,10 @@ alias f='figlet -f slant I use Arch btw'
 alias logout='pkill -u yuju'
 alias sleep='systemctl suspend'
 alias code='code --ozone-platform=wayland'
+
+alias vc='printf "anasarifin1995\nzvuFN2uIOzopHU9v\n" | openvpn3 session-start --config ~/client_config.ovpn'
+alias vd='sudo pkill openvpn3'
+alias p='ping google.com'
 
 alias la='ls -a'
 alias ll='ls -alFh'
@@ -443,3 +449,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# bun completions
+[ -s "/home/yuju/.bun/_bun" ] && source "/home/yuju/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
